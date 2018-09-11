@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Quote Generator</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: #6d9af0;
+            width: 100vh;
+            height: 100vh;
+        }
+        .container{
+            width: 600px;
+            height: 400px;
+            transform: translate(64vh, 05vh);
+            padding: 12px;
+            background: whitesmoke;
+            box-sizing: border-box;
+        }
+        .quotes, .author{
+            font-size: 2.2rem;
+            margin-left:40px;
+            padding-right: 10px;
+        }
+        .quotes i{
+            font-size: 16px;
+            margin-top: -25px;
+        }
+    h3{
+        transform: translateX(60vh);
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    .author{
+        text-transform: uppercase;
+        position: fixed;
+        bottom: 0;
+    }
+    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+    <h3>Random Quote Generator</h3>
+    <div class="container">
+        <div class="generate">
+            <div class="quotes">
+                <p id="quote"></p>
+            </div>
+            <div class="author">
+                <p id="auth"></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
