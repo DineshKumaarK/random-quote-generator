@@ -11,13 +11,16 @@
             margin: 0;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             background: #6d9af0;
-            width: 100vh;
-            height: 100vh;
+            width: 100%;
+            height: 100%;
         }
         .container{
-            width: 600px;
-            min-height: 400px;
-            transform: translate(64vh, 03vh);
+            width: 100%;
+            min-height: 50%;
+            position: relative;
+            /* transform: translate(64vh, 03vh); */
+            /* margin: auto 50%; */
+            margin: 0  auto;
             padding: 2px 12px 12px 12px;
             background: whitesmoke;
             box-sizing: border-box;
@@ -31,31 +34,30 @@
             font-size: 16px;
         }
     h3{
-        transform: translateX(60vh);
+        /* margin: 3% 0 3% 30%; */
+        width: 100%;
         text-align: center;
         font-size: 2rem;
         text-transform: uppercase;
     }
     .author{
         text-transform: uppercase;
-        position: absolute;
-        bottom: 0;
     }
     @media only screen and (max-width: 860px){
-        .container{
+        /* .container{
             transform: translate(0vh, 03vh);
             margin-left: 10%;
         }
         h3{
             transform: translateX(0vh);
             text-align: center;
-        }
+        } */
     }
     </style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
-    <h3>Random Quote Generator</h3>
+     <h3>Random Quote Generator</h3>
     <div class="container">
         <div class="generate">
             <div class="quotes">
